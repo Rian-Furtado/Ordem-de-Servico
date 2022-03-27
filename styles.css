@@ -1,0 +1,43 @@
+.white-background {
+	-fx-background-color: #fff;
+}
+
+.search-bar {
+	-fx-border-color: #2997CC;
+	-fx-border-width: 3;
+}
+
+.transparent{
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+.button{
+	-fx-font-weight: bold;
+	-fx-background-color: #2196f3;
+	-fx-brackground-radius: 22;
+	-fx-font-size:16;
+	-fx-text-fill: white;
+}
+
+.button:hover{
+	-fx-font-weight: bold;
+	-fx-background-color: #2196f3;
+	-fx-brackground-radius: 22;
+	-fx-font-size:16;
+	-fx-text-fill: white;
+	-fx-border-color: #2196f3;
+	-fx-border-width: 3;
+	
+}
+
+.button:pressed{
+	-fx-font-weight: bold;
+	-fx-background-color: #2196f3;
+	-fx-brackground-radius: 22;
+	-fx-font-size:16;
+	-fx-text-fill: white;
+	-fx-border-color: #2196f3;
+	-fx-border-width: 3;
+}
+
+

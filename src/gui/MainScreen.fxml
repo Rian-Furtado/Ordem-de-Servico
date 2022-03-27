@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="1277.0" spacing="20.0" styleClass="white-background" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainScreenController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="86.0" prefWidth="1303.0" text="Tela Principal">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" layoutX="50.0" maxWidth="-Infinity" prefHeight="45.0" prefWidth="375.0" styleClass="search-bar" stylesheets="@../../styles.css" VBox.vgrow="NEVER">
+         <children>
+            <TextField prefHeight="25.0" prefWidth="327.0" promptText=" Find a Setting" styleClass="transparent" stylesheets="@../../styles.css">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </TextField>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Área%20de%20Trabalho/iconestelamain/lupa.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets left="450.0" />
+         </VBox.margin>
+      </HBox>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" styleClass="transparent" stylesheets="@../../styles.css" VBox.vgrow="ALWAYS">
+         <content>
+            <AnchorPane prefHeight="575.0" prefWidth="1279.0" style="-fx-background-color: #D3D3D3;">
+               <children>
+                  <Button fx:id="registerButton" layoutX="25.0" layoutY="39.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/cadastrp_de_usuario.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="133.0" layoutY="156.0" prefHeight="35.0" prefWidth="108.0" text="Cadastro">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="133.0" layoutY="215.0" style="-fx-background-color: #D3D3D3;" text="Cadastro de clientes ">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Button fx:id="logoff" layoutX="25.0" layoutY="374.0" mnemonicParsing="false" onAction="#logoffOnAction" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#e40707">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/sair.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Label layoutX="130.0" layoutY="261.0" prefHeight="35.0" prefWidth="108.0" text="Sobre">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="130.0" layoutY="432.0" text="Sair do sistema, será necessário relaizar o login novamente.">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Button fx:id="about" layoutX="25.0" layoutY="267.0" mnemonicParsing="false" onAction="#aboutOnAction" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#e40707">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/about_image.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="130.0" layoutY="331.0" prefHeight="21.0" prefWidth="393.0" text="Informações sobre o desenvolverdor e licença atual do sistema.">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label layoutX="133.0" layoutY="375.0" prefHeight="35.0" prefWidth="108.0" text="Sair">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="professionalRegistration" layoutX="25.0" layoutY="156.0" mnemonicParsing="false" onAction="#registrationProfessional" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/cadasto_de_profissional.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="130.0" layoutY="39.0" prefHeight="35.0" prefWidth="283.0" text="Cadastro de Profissional ">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="133.0" layoutY="97.0" text="Cadastro de funcionários ">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="544.0" layoutY="43.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/ordem_de_servico.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="648.0" layoutY="43.0" prefHeight="35.0" prefWidth="210.0" text="Ordem de Serviço">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="648.0" layoutY="96.0" prefHeight="21.0" prefWidth="184.0" style="-fx-background-color: #D3D3D3;" text="Abrir ordem de serviço">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="544.0" layoutY="156.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/monitor_ordem.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="648.0" layoutY="156.0" prefHeight="35.0" prefWidth="210.0" text="Monitor OS">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="648.0" layoutY="214.0" prefHeight="21.0" prefWidth="196.0" style="-fx-background-color: #D3D3D3;" text="Monitorar ordemde serviço">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="544.0" layoutY="267.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/compras_3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="648.0" layoutY="270.0" prefHeight="35.0" prefWidth="210.0" text="Compras">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="644.0" layoutY="331.0" prefHeight="21.0" prefWidth="218.0" style="-fx-background-color: #D3D3D3;" text="Comprou algo? Registre aqui !">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="544.0" layoutY="385.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/vendas_icone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="648.0" layoutY="384.0" prefHeight="35.0" prefWidth="210.0" text="Vendas">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="648.0" layoutY="442.0" prefHeight="21.0" prefWidth="218.0" style="-fx-background-color: #D3D3D3;" text="Vendeu algo? Registre aqui !">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="932.0" layoutY="43.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/cliente_icone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="1043.0" layoutY="43.0" prefHeight="35.0" prefWidth="210.0" text="Clientes">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1042.0" layoutY="106.0" prefHeight="21.0" prefWidth="184.0" style="-fx-background-color: #D3D3D3;" text="Tabela de clientes">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="932.0" layoutY="156.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/service_icone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="1036.0" layoutY="156.0" prefHeight="35.0" prefWidth="210.0" text="Serviços">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1050.0" layoutY="214.0" prefHeight="21.0" prefWidth="123.0" style="-fx-background-color: #D3D3D3;" text="Tabela de Serviços,">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="932.0" layoutY="266.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/produtos_icone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="1036.0" layoutY="261.0" prefHeight="35.0" prefWidth="210.0" text="Produtos">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1036.0" layoutY="321.0" prefHeight="21.0" prefWidth="184.0" style="-fx-background-color: #D3D3D3;" text="Tabela de produtos">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="932.0" layoutY="385.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="96.0" style="-fx-background-color: #ADD8E6;" textFill="#402626">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Icones_ordem/saldo_caixo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="1036.0" layoutY="384.0" prefHeight="35.0" prefWidth="210.0" text="Saldo Caixa">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1036.0" layoutY="442.0" prefHeight="21.0" prefWidth="184.0" style="-fx-background-color: #D3D3D3;" text="Saldo do caixa">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>
